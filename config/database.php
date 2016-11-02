@@ -66,19 +66,19 @@ return [
             'engine' => null,
         ],
 
-        'pgsql' => [
-            'driver' => 'pgsql',
-            'host' => env('DB_HOST', 'localhost'),
-            'port' => env('DB_PORT', '5432'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+        'testing' => [
+            'driver' => 'mysql',
+            'host' => env('DB_TEST_HOST', 'localhost'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_TEST_DATABASE', 'homestead_test'),
+            'username' => env('DB_TEST_USERNAME', 'homestead'),
+            'password' => env('DB_TEST_PASSWORD', 'secret'),
             'charset' => 'utf8',
+            'collation' => 'utf8_unicode_ci',
             'prefix' => '',
-            'schema' => 'public',
-            'sslmode' => 'prefer',
+            'strict' => true,
+            'engine' => null,
         ],
-
     ],
 
     /*
